@@ -6,3 +6,9 @@ type Person = {
   biography: string;
   image: string
 }
+
+type Actress = Person & {
+  most_famous_movie: [string, string, string];
+  awards: string;
+  nationality: "American" | "British" | "Australian" | "Israeli-American" | "South African" | "French" | "Indian" | "Israeli" | "Spanish" | "South Korean" | "Chinese";
+}
